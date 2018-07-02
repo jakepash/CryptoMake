@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00B62CC244AE88FFDE116DB0 /* Pods_CoinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ABE9867C661150272AA3DFC /* Pods_CoinCalculator.framework */; };
-		10E722E8D9DE47BFF63B1290 /* Pods_CoinCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E62F227A2085D0FB7C29081 /* Pods_CoinCalculatorTests.framework */; };
-		3FFE0D35D5ED88A9CABD6A30 /* Pods_CoinCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E09E02C678B62F7C30C84EB7 /* Pods_CoinCalculatorUITests.framework */; };
+		3150F7E106DFE9B9F5481F7D /* Pods_CoinCalculatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070C053BE183315797C18181 /* Pods_CoinCalculatorTests.framework */; };
+		93ECAFC368C0CAC00CBC5DF1 /* Pods_CoinCalculatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897C442E073094EB069C306A /* Pods_CoinCalculatorUITests.framework */; };
 		98F1828E207E88E800B7E0DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1828D207E88E800B7E0DC /* AppDelegate.swift */; };
 		98F18290207E88E800B7E0DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F1828F207E88E800B7E0DC /* ViewController.swift */; };
 		98F18293207E88E800B7E0DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F18291207E88E800B7E0DC /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		98F182AE207E88E900B7E0DC /* CoinCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F182AD207E88E900B7E0DC /* CoinCalculatorUITests.swift */; };
 		98F182BC207E8E1800B7E0DC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F182BB207E8E1800B7E0DC /* Coin.swift */; };
 		98F182BE207FD57000B7E0DC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F182BD207FD57000B7E0DC /* DetailViewController.swift */; };
+		B92AC61D683F116A894A15D8 /* Pods_CoinCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9707ECB7E621B6B4BFDA48A7 /* Pods_CoinCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E62F227A2085D0FB7C29081 /* Pods_CoinCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3046F45F2BB1774DB89A0ED5 /* Pods-CoinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator.release.xcconfig"; sourceTree = "<group>"; };
-		4EBA1C0DAB6F52353F9D0507 /* Pods-CoinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
-		7455DF4A0E87A59F88A6FE13 /* Pods-CoinCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		8EBFD6DBB1AA2B55B10A766A /* Pods-CoinCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		02C01A3568AA628CE3D18EBF /* Pods-CoinCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		070C053BE183315797C18181 /* Pods_CoinCalculatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F4F8BFF144DFD3F614AAE9 /* Pods-CoinCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B65FDAB4682DD6DD2870E6C /* Pods-CoinCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C54C65E479861569ABFDA36 /* Pods-CoinCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorTests/Pods-CoinCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E039A043741E799BDFCC11F /* Pods-CoinCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		897C442E073094EB069C306A /* Pods_CoinCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9707ECB7E621B6B4BFDA48A7 /* Pods_CoinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F1828A207E88E800B7E0DC /* CoinCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F1828D207E88E800B7E0DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F1828F207E88E800B7E0DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,10 +62,7 @@
 		98F182AF207E88E900B7E0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98F182BB207E8E1800B7E0DC /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		98F182BD207FD57000B7E0DC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		9ABE9867C661150272AA3DFC /* Pods_CoinCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8E171E8F64500DC933A54D6 /* Pods-CoinCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF63BB74194483C2DE99FBEC /* Pods-CoinCalculatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E09E02C678B62F7C30C84EB7 /* Pods_CoinCalculatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCalculatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC66768D857ED677FD1830BB /* Pods-CoinCalculatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCalculatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinCalculatorUITests/Pods-CoinCalculatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B62CC244AE88FFDE116DB0 /* Pods_CoinCalculator.framework in Frameworks */,
+				B92AC61D683F116A894A15D8 /* Pods_CoinCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E722E8D9DE47BFF63B1290 /* Pods_CoinCalculatorTests.framework in Frameworks */,
+				3150F7E106DFE9B9F5481F7D /* Pods_CoinCalculatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,19 +86,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFE0D35D5ED88A9CABD6A30 /* Pods_CoinCalculatorUITests.framework in Frameworks */,
+				93ECAFC368C0CAC00CBC5DF1 /* Pods_CoinCalculatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9639DAAB1F0AC34092719015 /* Frameworks */ = {
+		726CA00BDCB8C3A81D267E06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9ABE9867C661150272AA3DFC /* Pods_CoinCalculator.framework */,
-				2E62F227A2085D0FB7C29081 /* Pods_CoinCalculatorTests.framework */,
-				E09E02C678B62F7C30C84EB7 /* Pods_CoinCalculatorUITests.framework */,
+				9707ECB7E621B6B4BFDA48A7 /* Pods_CoinCalculator.framework */,
+				070C053BE183315797C18181 /* Pods_CoinCalculatorTests.framework */,
+				897C442E073094EB069C306A /* Pods_CoinCalculatorUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +110,8 @@
 				98F182A1207E88E900B7E0DC /* CoinCalculatorTests */,
 				98F182AC207E88E900B7E0DC /* CoinCalculatorUITests */,
 				98F1828B207E88E800B7E0DC /* Products */,
-				B81593F046AD195846C42F70 /* Pods */,
-				9639DAAB1F0AC34092719015 /* Frameworks */,
+				FB79A9E0B0B17AFBFBCBB6DB /* Pods */,
+				726CA00BDCB8C3A81D267E06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,15 +158,15 @@
 			path = CoinCalculatorUITests;
 			sourceTree = "<group>";
 		};
-		B81593F046AD195846C42F70 /* Pods */ = {
+		FB79A9E0B0B17AFBFBCBB6DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4EBA1C0DAB6F52353F9D0507 /* Pods-CoinCalculator.debug.xcconfig */,
-				3046F45F2BB1774DB89A0ED5 /* Pods-CoinCalculator.release.xcconfig */,
-				8EBFD6DBB1AA2B55B10A766A /* Pods-CoinCalculatorTests.debug.xcconfig */,
-				7455DF4A0E87A59F88A6FE13 /* Pods-CoinCalculatorTests.release.xcconfig */,
-				C8E171E8F64500DC933A54D6 /* Pods-CoinCalculatorUITests.debug.xcconfig */,
-				DF63BB74194483C2DE99FBEC /* Pods-CoinCalculatorUITests.release.xcconfig */,
+				5E039A043741E799BDFCC11F /* Pods-CoinCalculator.debug.xcconfig */,
+				02C01A3568AA628CE3D18EBF /* Pods-CoinCalculator.release.xcconfig */,
+				25F4F8BFF144DFD3F614AAE9 /* Pods-CoinCalculatorTests.debug.xcconfig */,
+				5C54C65E479861569ABFDA36 /* Pods-CoinCalculatorTests.release.xcconfig */,
+				FC66768D857ED677FD1830BB /* Pods-CoinCalculatorUITests.debug.xcconfig */,
+				4B65FDAB4682DD6DD2870E6C /* Pods-CoinCalculatorUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -178,11 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F182B2207E88E900B7E0DC /* Build configuration list for PBXNativeTarget "CoinCalculator" */;
 			buildPhases = (
-				ADBECDB1AD4BFE3A37805E43 /* [CP] Check Pods Manifest.lock */,
+				BE14C6C90DAF3E98333C4461 /* [CP] Check Pods Manifest.lock */,
 				98F18286207E88E800B7E0DC /* Sources */,
 				98F18287207E88E800B7E0DC /* Frameworks */,
 				98F18288207E88E800B7E0DC /* Resources */,
-				5E80110383F5375550994179 /* [CP] Embed Pods Frameworks */,
+				B06BB836816821DC2C18EC2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,7 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F182B5207E88E900B7E0DC /* Build configuration list for PBXNativeTarget "CoinCalculatorTests" */;
 			buildPhases = (
-				9486532B465AD96EC9C703F3 /* [CP] Check Pods Manifest.lock */,
+				243B0CDAABEE05863F5C6AEC /* [CP] Check Pods Manifest.lock */,
 				98F1829A207E88E900B7E0DC /* Sources */,
 				98F1829B207E88E900B7E0DC /* Frameworks */,
 				98F1829C207E88E900B7E0DC /* Resources */,
@@ -216,7 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F182B8207E88E900B7E0DC /* Build configuration list for PBXNativeTarget "CoinCalculatorUITests" */;
 			buildPhases = (
-				EBB37193E50933DB4906C2C6 /* [CP] Check Pods Manifest.lock */,
+				2E137F2A0507CC1355E6B0A8 /* [CP] Check Pods Manifest.lock */,
 				98F182A5207E88E900B7E0DC /* Sources */,
 				98F182A6207E88E900B7E0DC /* Frameworks */,
 				98F182A7207E88E900B7E0DC /* Resources */,
@@ -302,25 +302,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5E80110383F5375550994179 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CryptoCurrencyKit/CryptoCurrencyKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoCurrencyKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9486532B465AD96EC9C703F3 /* [CP] Check Pods Manifest.lock */ = {
+		243B0CDAABEE05863F5C6AEC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,25 +320,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADBECDB1AD4BFE3A37805E43 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CoinCalculator-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBB37193E50933DB4906C2C6 /* [CP] Check Pods Manifest.lock */ = {
+		2E137F2A0507CC1355E6B0A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,6 +332,42 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CoinCalculatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B06BB836816821DC2C18EC2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoCurrencyKit/CryptoCurrencyKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoCurrencyKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinCalculator/Pods-CoinCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE14C6C90DAF3E98333C4461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinCalculator-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -555,17 +555,14 @@
 		};
 		98F182B3207E88E900B7E0DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EBA1C0DAB6F52353F9D0507 /* Pods-CoinCalculator.debug.xcconfig */;
+			baseConfigurationReference = 5E039A043741E799BDFCC11F /* Pods-CoinCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z28CSUK723;
 				INFOPLIST_FILE = CoinCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpashman.CoinCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -575,17 +572,14 @@
 		};
 		98F182B4207E88E900B7E0DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3046F45F2BB1774DB89A0ED5 /* Pods-CoinCalculator.release.xcconfig */;
+			baseConfigurationReference = 02C01A3568AA628CE3D18EBF /* Pods-CoinCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z28CSUK723;
 				INFOPLIST_FILE = CoinCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpashman.CoinCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -595,17 +589,13 @@
 		};
 		98F182B6207E88E900B7E0DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EBFD6DBB1AA2B55B10A766A /* Pods-CoinCalculatorTests.debug.xcconfig */;
+			baseConfigurationReference = 25F4F8BFF144DFD3F614AAE9 /* Pods-CoinCalculatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoinCalculatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpashman.CoinCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -616,17 +606,13 @@
 		};
 		98F182B7207E88E900B7E0DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7455DF4A0E87A59F88A6FE13 /* Pods-CoinCalculatorTests.release.xcconfig */;
+			baseConfigurationReference = 5C54C65E479861569ABFDA36 /* Pods-CoinCalculatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoinCalculatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpashman.CoinCalculatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -637,16 +623,12 @@
 		};
 		98F182B9207E88E900B7E0DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8E171E8F64500DC933A54D6 /* Pods-CoinCalculatorUITests.debug.xcconfig */;
+			baseConfigurationReference = FC66768D857ED677FD1830BB /* Pods-CoinCalculatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoinCalculatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpashman.CoinCalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -657,16 +639,12 @@
 		};
 		98F182BA207E88E900B7E0DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF63BB74194483C2DE99FBEC /* Pods-CoinCalculatorUITests.release.xcconfig */;
+			baseConfigurationReference = 4B65FDAB4682DD6DD2870E6C /* Pods-CoinCalculatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoinCalculatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacobpashman.CoinCalculatorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
