@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        nameLabel.text = String("\(list[clickedCoin].name): \(list[clickedCoin].symbol)")
+        nameLabel.text = "\(list[clickedCoin].name): \(list[clickedCoin].symbol)"
         rankLabel.text = String(list[clickedCoin].rank)
         availableSupplyLabel.text = String(list[clickedCoin].availableSupply)
         change1hLabel.text = String(list[clickedCoin].percentChange1h) + "%"
