@@ -76,14 +76,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        totalMoney = 0.0
         
+        // Total Money
         for row in 0...list.count-1 {
-            totalMoney += list[row].costBasis
+            totalMoney += list[row].price*list[row].amountOwned
             print(totalMoney)
         }
+        self.totalCashLabel.text = String("$\(totalMoney)")
+        // Total percent change
         
         self.totalPercentChangeLabel.text = "2%"
-        self.totalCashLabel.text = String("$\(totalMoney)")
     }
     
     func fetch() {
