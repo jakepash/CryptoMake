@@ -56,6 +56,8 @@ class NewCoinViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         
         if identifier == "done" {
             print("done button pressed")
+            let CoinPickedRow = self.CoinPickerView.selectedRow(inComponent: 0)
+            print(coinOptions[CoinPickedRow])
         }
         
     }
