@@ -94,6 +94,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         self.totalPercentChangeLabel.text = String(format: "%.02f", total*100) + "%"
         
+        
     }
     
     func fetch() {
