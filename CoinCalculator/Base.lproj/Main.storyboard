@@ -71,6 +71,7 @@
                         <outlet property="tbv" destination="p8i-3h-n87" id="mhi-7i-2AN"/>
                         <outlet property="totalCashLabel" destination="U7p-J5-ZDW" id="wgD-64-PZk"/>
                         <outlet property="totalPercentChangeLabel" destination="pXU-Ej-6c7" id="eZ0-nq-rwx"/>
+                        <segue destination="ssf-IS-Z1w" kind="show" identifier="segue" id="pdv-50-ckM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5G5-2E-l9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
