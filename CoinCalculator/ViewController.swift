@@ -57,8 +57,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        list = [Coin(name: "Bitcoin"), Coin(name: "Ethereum"), Coin(name: "Ripple"), Coin(name: "Bitcoin-Cash"), Coin(name: "EOS"), Coin(name: "LiteCoin"), Coin(name: "Cardano"), Coin(name: "Stellar"),Coin(name: "IOTA"), Coin(name: "NEO"), Coin(name: "Monero"), Coin(name: "Dash"), Coin(name: "NEM"), Coin(name: "TRON"), Coin(name: "Tether")]
-        list = [Coin(name: "Bitcoin")]
+        list = [Coin(name: "Bitcoin"), Coin(name: "Ethereum"), Coin(name: "Ripple"), Coin(name: "Bitcoin-Cash"), Coin(name: "EOS"), Coin(name: "LiteCoin"), Coin(name: "Cardano"), Coin(name: "Stellar"),Coin(name: "IOTA"), Coin(name: "NEO"), Coin(name: "Monero"), Coin(name: "Dash"), Coin(name: "NEM"), Coin(name: "TRON"), Coin(name: "Tether")]
+//        list = [Coin(name: "Bitcoin")]
         // Do any additional setup after loading the view, typically from a nib.
         fetch()
         self.tbv.addSubview(self.refreshControl)
@@ -86,7 +86,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     
-    
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+        
+    }
     
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
