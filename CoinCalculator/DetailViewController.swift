@@ -18,6 +18,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var change1hLabel: UILabel!
     @IBOutlet weak var change24hLabel: UILabel!
     @IBOutlet weak var change7dLabel: UILabel!
+    @IBOutlet weak var costBasisLabel: UILabel!
+    @IBOutlet weak var amountMadeLabel: UILabel!
+    @IBOutlet weak var percentMadeLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -30,6 +33,12 @@ class DetailViewController: UIViewController {
         change1hLabel.text = String(list[clickedCoin].percentChange1h) + "%"
         change24hLabel.text = String(list[clickedCoin].percentChange24h) + "%"
         change7dLabel.text = String(list[clickedCoin].percentChange7d) + "%"
+        costBasisLabel.text = "$" + String(list[clickedCoin].costBasis)
+        let amountMade = list[clickedCoin].price-list[clickedCoin].costBasis
+        amountMadeLabel.text = String(format: "$%.02f", amountMade)
+        let percentMade = abs(list[clickedCoin].price - list[clickedCoin].costBasis) / list[clickedCoin].costBasis  * 100.0
+        percentMadeLabel.text = String(format: "%.02f", percentMade) + "%"
+        
         
         if list[clickedCoin].percentChange1h < 0 {
             change1hLabel.textColor = UIColor.red
@@ -40,6 +49,10 @@ class DetailViewController: UIViewController {
         if list[clickedCoin].percentChange7d < 0 {
             change7dLabel.textColor = UIColor.red
         }
+        if amountMade < 0 {
+            amountMadeLabel.textColor = UIColor.red
+        }
+        
     }
 
 

@@ -66,7 +66,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         fetch()
         self.tbv.addSubview(self.refreshControl)
-        _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
+        //_ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
         
         self.tbv.allowsSelection = true
      
