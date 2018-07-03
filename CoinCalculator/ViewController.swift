@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     var time: Int = 0
     var totalMoney: Double = 0.0
-    
+    var totalCostBasis: Double = 0.0
     @IBOutlet weak var tbv: UITableView!
     @IBOutlet weak var totalCashLabel: UILabel!
     @IBOutlet weak var totalPercentChangeLabel: UILabel!
@@ -84,9 +84,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(totalMoney)
         }
         self.totalCashLabel.text = String("$\(totalMoney)")
+        
         // Total percent change
         
-        self.totalPercentChangeLabel.text = "2%"
+        for row in 0...list.count-1{
+            totalCostBasis += list[row].costBasis
+        }
+        let total = (totalMoney-totalCostBasis)/totalCostBasis
+
+        self.totalPercentChangeLabel.text = String(format: "%.02f", total*100) + "%"
+        
     }
     
     func fetch() {
