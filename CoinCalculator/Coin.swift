@@ -22,7 +22,7 @@ class Coin {
     var percentChange7d: Double = 0.0
     var symbol: String = ""
     var amountOwned: Double = 0.0
-    var datePurchased = Date()
+    var costBasis: Double = 0.0
     
     
     
