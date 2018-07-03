@@ -57,7 +57,18 @@ class NewCoinViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         if identifier == "done" {
             print("done button pressed")
             let CoinPickedRow = self.CoinPickerView.selectedRow(inComponent: 0)
-            print(coinOptions[CoinPickedRow])
+            if AmountBought != nil {
+               list[CoinPickedRow].amountOwned = AmountBought as! Double
+            } else {
+                list[CoinPickedRow].amountOwned = 0.0
+            }
+            
+            if CostBasis != nil {
+                list[CoinPickedRow].costBasis = AmountBought as! Double
+            } else {
+                list[CoinPickedRow].amountOwned = 0.0
+            }
+            
         }
         
     }
