@@ -11,7 +11,7 @@ var clickedCoin: Int!
 var list: [Coin]!
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
-        var time: Int = 0
+    var time: Int = 0
     var totalMoney: Double = 0.0
     
     @IBOutlet weak var tbv: UITableView!
@@ -83,7 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         self.totalPercentChangeLabel.text = "2%"
-        self.totalCashLabel.text = String(totalMoney)
+        self.totalCashLabel.text = String("$\(totalMoney)")
     }
     
     func fetch() {
