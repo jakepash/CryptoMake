@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     var time: Int = 0
     var totalMoney: Double = 0.0
-    
+    var totalCostBasis: Double = 0.0
     @IBOutlet weak var tbv: UITableView!
     @IBOutlet weak var totalCashLabel: UILabel!
     @IBOutlet weak var totalPercentChangeLabel: UILabel!
@@ -76,13 +76,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        totalMoney = 0.0
         
+        // Total Money
         for row in 0...list.count-1 {
-            totalMoney += list[row].costBasis
+            totalMoney += list[row].price*list[row].amountOwned
             print(totalMoney)
         }
-        
-        self.totalPercentChangeLabel.text = "2%"
         self.totalCashLabel.text = String("$\(totalMoney)")
         tbv.reloadData()
     }
