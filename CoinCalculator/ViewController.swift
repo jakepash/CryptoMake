@@ -16,7 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         var time: Int = 0
         
-        @IBOutlet weak var tbv: UITableView!
+    @IBOutlet weak var tbv: UITableView!
+    @IBOutlet weak var totalCashLabel: UILabel!
+    @IBOutlet weak var totalPercentChangeLabel: UILabel!
     
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,6 +67,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         _ = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(reload), userInfo: nil, repeats: true)
         
         self.tbv.allowsSelection = true
+     
+        self.totalCashLabel.text = "$300"
+        self.totalPercentChangeLabel.text = "2%"
         
     }
 
