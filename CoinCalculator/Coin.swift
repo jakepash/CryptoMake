@@ -21,6 +21,10 @@ class Coin {
     var percentChange24h: Double = 0.0
     var percentChange7d: Double = 0.0
     var symbol: String = ""
+    var amountOwned: Double = 0.0
+    var datePurchased = Date()
+    
+    
     
     
     init(name: String) {
