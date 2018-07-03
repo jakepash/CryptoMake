@@ -36,7 +36,7 @@ class DetailViewController: UIViewController {
         costBasisLabel.text = "$" + String(list[clickedCoin].costBasis)
         let amountMade = list[clickedCoin].price-list[clickedCoin].costBasis
         amountMadeLabel.text = String(format: "$%.02f", amountMade)
-        let percentMade = abs(list[clickedCoin].price - list[clickedCoin].costBasis) / list[clickedCoin].costBasis  * 100.0
+        let percentMade = (list[clickedCoin].price - list[clickedCoin].costBasis) / list[clickedCoin].costBasis  * 100.0
         percentMadeLabel.text = String(format: "%.02f", percentMade) + "%"
         
         
@@ -52,6 +52,10 @@ class DetailViewController: UIViewController {
         if amountMade < 0 {
             amountMadeLabel.textColor = UIColor.red
         }
+        if percentMade < 0 {
+            percentMadeLabel.textColor = UIColor.red
+        }
+        
         
     }
 
