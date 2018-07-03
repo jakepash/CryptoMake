@@ -49,5 +49,15 @@ class NewCoinViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
     }
     
 
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        if identifier == "done" {
+            print("done button pressed")
+        }
+        
+    }
 
 }
