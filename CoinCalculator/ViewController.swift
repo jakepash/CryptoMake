@@ -84,6 +84,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.totalPercentChangeLabel.text = "2%"
         self.totalCashLabel.text = String("$\(totalMoney)")
+        tbv.reloadData()
     }
     
     func fetch() {
@@ -95,9 +96,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    @objc func reload() {
-        tbv.reloadData()
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
