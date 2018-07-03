@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="916"/>
         </scene>
-        <!--Add View Controller-->
+        <!--New Coin View Controller-->
         <scene sceneID="lmF-cf-u4l">
             <objects>
-                <viewController id="gLm-1H-iP4" customClass="AddViewController" customModule="CoinCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gLm-1H-iP4" customClass="NewCoinViewController" customModule="CoinCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8AX-nD-qtT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,6 +297,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sNx-su-XTC"/>
                     </view>
+                    <connections>
+                        <outlet property="AmountBought" destination="qLd-n9-TaQ" id="hwU-AT-rwR"/>
+                        <outlet property="CoinPickerView" destination="iL6-5h-MPN" id="U1k-R5-tCc"/>
+                        <outlet property="CostBasis" destination="ycg-1h-hM6" id="2TM-ic-7Hv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyh-FO-vKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
