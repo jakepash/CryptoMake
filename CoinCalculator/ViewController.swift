@@ -11,8 +11,9 @@ var clickedCoin: Int!
 var list: [Coin]!
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
-        var time: Int = 0
-        
+    var time: Int = 0
+    var totalMoney: Double = 0.0
+    
     @IBOutlet weak var tbv: UITableView!
     @IBOutlet weak var totalCashLabel: UILabel!
     @IBOutlet weak var totalPercentChangeLabel: UILabel!
@@ -69,10 +70,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.tbv.allowsSelection = true
      
-        self.totalCashLabel.text = "$300"
-        self.totalPercentChangeLabel.text = "2%"
+        
+        
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        for row in 0...list.count-1 {
+            totalMoney += list[row].costBasis
+            print(totalMoney)
+        }
+        
+        self.totalPercentChangeLabel.text = "2%"
+        self.totalCashLabel.text = String("$\(totalMoney)")
+    }
+    
     func fetch() {
         for i in 0...list.count-1 {
              list[i].fetch()
