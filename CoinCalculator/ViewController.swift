@@ -5,13 +5,10 @@
 //  Created by Jacob Pashman on 4/11/18.
 //  Copyright © 2018 jacobpashman. All rights reserved.
 //
-
 import UIKit
 import CryptoCurrencyKit
-
 var clickedCoin: Int!
 var list: [Coin]!
-
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         var time: Int = 0
@@ -30,12 +27,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.textLabel?.text = String(list[indexPath.row].name)
             
             let priceLabel = UILabel(frame: CGRect(x: cell.contentView.frame.width-20, y: 12, width: 100, height: 25))
-            priceLabel.text = "$" + String(list[indexPath.row].price)
-            if list[indexPath.row].percentChange24h > 0 {
-                priceLabel.textColor = UIColor(red:0.4, green:0.8, blue:0.63, alpha:1.0)
+            if list[indexPath.row].costBasis > 0 {
+                let percent = abs(list[indexPath.row].price - list[indexPath.row].costBasis) / list[indexPath.row].costBasis  * 100.0
+                priceLabel.text = String(Double(round(1000*percent)/1000)) + "%"
+                if list[indexPath.row].price > list[indexPath.row].costBasis {
+                    priceLabel.textColor = UIColor(red:0.4, green:0.8, blue:0.63, alpha:1.0)
+                } else {
+                    priceLabel.textColor = UIColor(red:0.93, green:0.45, blue:0.44, alpha:1.0)
+                }
             } else {
-                priceLabel.textColor = UIColor(red:0.93, green:0.45, blue:0.44, alpha:1.0)
+                priceLabel.text = "none owned"
             }
+            
             priceLabel.textAlignment = NSTextAlignment.right
             cell.contentView.addSubview(priceLabel)
             
@@ -43,7 +46,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return(cell)
     }
     
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         clickedCoin = indexPath.row
@@ -55,7 +57,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         fetch()
         refreshControl.endRefreshing()
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +73,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.totalPercentChangeLabel.text = "2%"
         
     }
-
     func fetch() {
         for i in 0...list.count-1 {
              list[i].fetch()
@@ -89,7 +89,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
         
@@ -106,6 +105,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }()
     
     
-
 }
-
