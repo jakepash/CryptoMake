@@ -92,9 +92,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         let total = (totalMoney-totalCostBasis)/totalCostBasis
 
-        self.totalPercentChangeLabel.text = String(format: "%.02f", total*100) + "%"
-        
-        
+        let percentage = String(format: "%.02f", total*100)
+        self.totalPercentChangeLabel.text = percentage
+        if self.totalPercentChangeLabel.text != nil {
+            self.totalPercentChangeLabel.isHidden = false
+            if Double(percentage)! < 0.0 {
+                self.totalPercentChangeLabel.textColor = UIColor.red
+                self.totalPercentChangeLabel.text = self.totalPercentChangeLabel.text! + "%"
+            } else {
+                self.totalPercentChangeLabel.text = self.totalPercentChangeLabel.text! + "%"
+            }
+        }
+        if total.isNaN {
+            self.totalPercentChangeLabel.isHidden = true
+        }
     }
     
     func fetch() {
